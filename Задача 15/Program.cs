@@ -6,15 +6,20 @@
 Console.WriteLine("Задача 15. Проверка на выходной день недели");
 
 Console.Write("Введите число от 1 до 7: ");
-int numberDay = int.Parse(Console.ReadLine());
+IsWeekend(int.Parse(Console.ReadLine()));
 
-if (numberDay == 6 || numberDay == 7)
+void IsWeekend(int numberDay) //метод проверки на выходной день
 {
-    Console.WriteLine("Выходной? -> да");
-}
-else if (numberDay >= 1 && numberDay <= 5)
-{
-    Console.WriteLine("Выходной? -> нет");
-} else {
-    Console.WriteLine("Некорректный ввод. Вводите число от 1 до 7.");
+    if (numberDay == 6 || numberDay == 7)
+    {
+        Console.WriteLine("Выходной? -> да");
+    }
+    else if (numberDay >= 1 && numberDay <= 5)
+    {
+        Console.WriteLine("Выходной? -> нет");
+    }
+    else
+    {
+        Console.WriteLine("Некорректный ввод. Вводите число от 1 до 7.");
+    }
 }
