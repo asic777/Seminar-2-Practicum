@@ -8,9 +8,12 @@ Console.WriteLine("Задача 10. Вывод второй цифры трех�
 Console.Write("Введите трехзначное число: ");
 int number = int.Parse(Console.ReadLine());
 
-if (number / 100 > 0 && number / 1000 == 0) {
+if (number > 99 && number < 1000)
+{
     int result = (number / 10) % 10;
     Console.WriteLine("Вторая цифра: {0}", result);
-} else {
+}
+else
+{
     Console.WriteLine("Введено не трехзначное число.");
 }
