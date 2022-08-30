@@ -6,7 +6,7 @@
 Console.WriteLine("Задача 13. Вывод третьей цифры числа");
 
 Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+int number = Math.Abs(int.Parse(Console.ReadLine()));
 
 if (number > 99)
 {
@@ -14,7 +14,7 @@ if (number > 99)
     {
         number /= 10;
     }
-    Console.WriteLine("Третья цифра: {0}", number % 10);
+    Console.WriteLine("Третья цифра: {0}", Math.Abs(number % 10));
 }
 else
 {
